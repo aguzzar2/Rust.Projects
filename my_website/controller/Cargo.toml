@@ -1,0 +1,21 @@
+[package]
+name = "controller"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "webapp_controller"
+path = "src/bin/main.rs"
+
+[dependencies]
+rocket = { version = "0.5.0-rc.2", features = ["secrets", "json"] }
+json = "0.12.4"
+form_urlencoded = "1.2.0"
+config = {path = "../note_webapp/src/api/src/config"}
+launch_aw = {path = "../anthony_webapp/src/launch_aw"}
+
+[dependencies.rocket_dyn_templates]
+version = "=0.1.0-rc.3"
+features = ["handlebars", "tera"]

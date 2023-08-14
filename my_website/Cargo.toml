@@ -1,0 +1,18 @@
+[package]
+name = "my_website"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = [
+    "hello",
+    "controller",
+    "anthony_webapp",
+    "anthony_webapp/src/launch_aw",
+    "note_webapp",
+    "note_webapp/src/api",
+    "note_webapp/src/api/src/config",
+    "note_webapp/src/api/src/config/src/launch",
+]

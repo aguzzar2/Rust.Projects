@@ -1,0 +1,9 @@
+{
+    "rust-analyzer.linkedProjects": [
+        ".\\note_webapp\\Cargo.toml",
+        ".\\note_webapp\\Cargo.toml",
+        ".\\note_webapp\\Cargo.toml",
+        ".\\note_webapp\\Cargo.toml"
+    ],
+    "rust-analyzer.showUnlinkedFileNotification": false
+}
