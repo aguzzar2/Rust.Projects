@@ -6,6 +6,11 @@
     <title>English to Jap Notes</title>
 </head>
 <body>
+    <form id="return-to-info-form" method="post" action="/goto-index">
+        <div class="button__space">
+            <button class="large__button" type="submit">Return Home</button>
+        </div>
+    </form>
     <div class="container">
         <form id="login-form" method="post">
             <div class="login__inputs">
@@ -21,8 +26,10 @@
                     </div>
                 </div>
             </div>
-            <button class ="large__button" type="button" onclick="submitLoginForm()">Login</button>
-            <button class ="large__button" type="button" onclick="submitSignUpForm()">Signup</button>
+            <button class ="small__button" type="button" onclick="submitLoginForm()">Login</button>
+            <button class ="small__button" type="button" onclick="submitSignUpForm()">Signup</button>
+            
+
         </form>
     </div>
     <script>
@@ -35,6 +42,11 @@
         function submitSignUpForm() {
             var form = document.getElementById("login-form");
             form.action = "/signup"; 
+            form.submit();
+        }
+        function submitReturnHomeForm() {
+            var form = document.getElementById("return-to-info-form");
+            form.action = "/goto-index"; 
             form.submit();
         }
     </script>

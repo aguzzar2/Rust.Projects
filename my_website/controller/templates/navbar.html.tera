@@ -1,22 +1,21 @@
-<link rel = "stylesheet" href = "/static/style.css">
+<nav class = 'navbar-container'>
+    <div class = 'top-navbar'>
+        <form id = 'title-form' method = 'post' action = '/index'>
+            <button class ='nav__links-button' type = 'submit'>
+                Anthony Guzzardo
+            </button>
+        </form>
+    </div>
 
-<div class = "title">
-    <form id = "title" method = "post" action = "/index">
-        <button class ="title" type = "submit" href="">
-            Anthony Guzzardo
-        </button>
-    </form>
-</div>
-
-<nav class = "buttons">
-    <form id = "app-form" method = "post" action = "/webapp">
-        <button class = "nav__links" type = "submit" href="">Web Apps</a>
-    </form>
-    <form id = "resume-form" method = "post" action = "/resume">
-        <button class = "nav__links" type="submit" href="">Resume</button>
-    </form>
-    <form id = "about-form" method = "post" action = "/about">
-        <button class = "nav__links" type = "submit" href = "">About Me</button>
-    </form>
-
+    <div class='bottom-navbar'>
+        <form id='app-form' method='post' action='/webapp'>
+            <button class='nav__links-button' type='submit'>WebApps</button>
+        </form>
+        <form id='resume-form' method='post' action='/resume'>
+            <button class='nav__links-button' type='submit'>Resume</button>
+        </form>
+        <form id='about-form' method='post' action='/about'>
+            <button class='nav__links-button' type='submit'>About</button>
+        </form>
+    </div>
 </nav>

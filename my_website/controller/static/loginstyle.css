@@ -26,6 +26,19 @@ body {
 }
 
 .large__button{
+  font-size: 30px;
+  padding: 20px 20px;
+  width: 300px;
+  height: 80px;
+  margin: 0 5px;
+  border-radius: 25px;
+  border-color:aliceblue;
+  color: #8EBB8E;
+  background-color: azure;
+  font-weight: bold;
+}
+
+.small__button{
   font-size: 20px;
   padding-right: 4px;
   padding-left: 4px;

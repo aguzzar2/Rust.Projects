@@ -4,35 +4,26 @@
     <meta charset = "UTF-8">    
     <title>Anthony's Homepage</title>
     <link rel = "stylesheet" href = "/static/style.css">
+    <script src = "/scripts/j.js"></script>
 </head>
 <body>
-    <div class = "title">
-        <form id = "title" method = "post" action = "/index">
-            <button class ="title" type = "submit" href="">
-                Anthony Guzzardo
-            </button>
-        </form>
-    </div>
-    
-    <nav class = "buttons">
-        <form id = "app-form" method = "post" action = "/webapp">
-            <button class = "nav__links" type = "submit" href="">Web Apps</a>
-        </form>
-        <form id = "resume-form" method = "post" action = "/resume">
-            <button class = "nav__links" type="submit" href="">Resume</button>
-        </form>
-        <form id = "about-form" method = "post" action = "/about">
-            <button class = "nav__links" type = "submit" href = "">About Me</button>
-        </form>
 
-    </nav>
+    {{ navbar_html | safe }}
 
-    <div class = "web__apps">
-        <li>Note Taking App from Safe Systems</li>
-        <li>Other Project</li>
-        <li>Other Project</li>
-    </div>
+    <div class = "big__container">
+        <div class = "home__div">
+            <img id = "sitting__rock" src = "/images/sittingrock.jpg" alt = "note-app">
+        </div>
     
+        <div class = "aboutme__div">
+            After obtaining my Bachelors of Science from DePaul University - studying
+            Computer Science - I split the summer working independently on full-stack
+            development and assisting at a nursing facility. This website is the project. 
+            It runs using Google Cloud as host provider, with the backend written in Rust.
+            The purpose of this website is to primarily to provide information on my work 
+            educational background, but I will include project examples as I take on more
+            to reference my skills as a developer (PROJECTS section).
+        </div>
 
 </body>
 </html>

@@ -27,6 +27,11 @@
                 <button class="large__button" type="submit">Sign Out</button>
             </div>
         </form>
+        <form id="return-to-info-form" method="post" action="/goto-index">
+            <div class="button__space">
+                <button class="large__button" type="submit">Return Home</button>
+            </div>
+        </form>
     </nav>
 
     <!-- <h1>Learning a New Language, eh?</h1> -->

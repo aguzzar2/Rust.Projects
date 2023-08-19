@@ -2,36 +2,20 @@
 <html lang="en">
 <head>
     <meta charset = "UTF-8">    
-    <title>Anthony's Resume</title>
+    <title>Anthony's Homepage</title>
     <link rel = "stylesheet" href = "/static/style.css">
+    <script src = "/scripts/j.js"></script>
 </head>
 <body>
 
-    <!-- FIX TO BLOCK HMTL-->
-    <div class = "title">
-        <form id = "title" method = "post" action = "/index">
-            <button class ="title" type = "submit" href="">
-                Anthony Guzzardo
-            </button>
-        </form>
-    </div>
+    {{ navbar_html | safe }}
     
-    <nav class = "buttons">
-        <form id = "app-form" method = "post" action = "/webapp">
-            <button class = "nav__links" type = "submit" href="">Web Apps</a>
-        </form>
-        <form id = "resume-form" method = "post" action = "/resume">
-            <button class = "nav__links" type="submit" href="">Resume</button>
-        </form>
-        <form id = "about-form" method = "post" action = "/about">
-            <button class = "nav__links" type = "submit" href = "">About Me</button>
-        </form>
-
-    </nav>
-    <div class = "webapp__images">
-        <form id = "note_app-form" method = "post" action = "/run-note_webapp">
-            <img src = "/images/note-app.png" alt = "note-app">
-            <button class = "nav__links" type = "submit" href = "">Run</button>
+    <div class = "big__container">
+        <div class = "home__div">
+            <img id = "noteapp__photo" src = "/images/note-app.png" alt = "note-app">
+        </div>
+        <form id = "note_app-form" method = "post" action = "/notewebapp_login">
+            <button class = "nav__links-button" type = "submit" href = "">Run</button>
         </form>
     </div>
 </body>
