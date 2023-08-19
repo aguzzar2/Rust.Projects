@@ -101,6 +101,9 @@ dependencies = [
  "json",
  "rocket",
  "rocket_dyn_templates",
+ "serde",
+ "serde_urlencoded",
+ "urlencoding",
 ]
 
 [[package]]
@@ -294,33 +297,13 @@ dependencies = [
 ]
 
 [[package]]
-name = "config"
-version = "0.1.0"
-dependencies = [
- "api",
- "form_urlencoded",
- "json",
- "lazy_static",
- "lru_time_cache",
- "note_webapp",
- "rand",
- "reqwest",
- "rocket",
- "rocket_dyn_templates",
- "rusqlite",
- "serde",
- "serde_urlencoded",
- "urlencoding",
-]
-
-[[package]]
 name = "controller"
 version = "0.1.0"
 dependencies = [
- "config",
+ "anthony_webapp",
+ "api",
  "form_urlencoded",
  "json",
- "launch_aw",
  "rocket",
  "rocket_dyn_templates",
 ]
@@ -785,10 +768,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "hello"
-version = "0.1.0"
-
-[[package]]
 name = "hermit-abi"
 version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1054,37 +1033,6 @@ checksum = "8367585489f01bc55dd27404dcf56b95e6da061a256a666ab23be9ba96a2e587"
 dependencies = [
  "bitflags 1.3.2",
  "libc",
-]
-
-[[package]]
-name = "launch"
-version = "0.1.0"
-dependencies = [
- "config",
- "form_urlencoded",
- "json",
- "lazy_static",
- "lru_time_cache",
- "note_webapp",
- "rand",
- "reqwest",
- "rocket",
- "rocket_dyn_templates",
- "rusqlite",
- "serde",
- "serde_urlencoded",
- "urlencoding",
-]
-
-[[package]]
-name = "launch_aw"
-version = "0.1.0"
-dependencies = [
- "anthony_webapp",
- "form_urlencoded",
- "json",
- "rocket",
- "rocket_dyn_templates",
 ]
 
 [[package]]

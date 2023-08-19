@@ -1,70 +1,7 @@
 extern crate rocket;
 extern crate note_webapp;
 
-pub mod gt {
-    use rocket::{response::status::BadRequest, get};
-    use rocket_dyn_templates::{Template, context};
-    use rocket::serde::json::json;
-
-    #[get("/")]
-    pub fn loginpage() -> Template {
-        Template::render("login", context! { field: "value" })
-    }
-
-    #[get("/login")]
-    pub fn login_page() -> Template {
-        Template::render("login", context! {})
-    }
-
-    #[get("/homescreen")]
-    pub fn homescreen() -> Template {
-        Template::render("homescreen", context! { field: "value" })
-    }
-    #[get("/createdeck")]
-    pub fn createdeck() -> Template {
-        Template::render("createdeck", context! { field: "value" })
-    }
-
-    #[get("/library")]
-    pub fn library() -> Template {
-        let table_names = note_webapp::fun::get_table_names().unwrap_or_else(|_| Vec::new());
-
-        println!("Existing Decks Are {:?}", table_names);
-
-        let context = json!({
-            "tables": table_names,
-        });
-        Template::render("library", context)
-    }
-
-
-    #[get("/addtodeck/<table_name>")]
-    pub fn addtodeck(table_name: String) -> Template {
-        eprintln!("Rerouting to addtodeck.html.tera");
-        let context = json!({
-            "table": table_name,
-        });
-        Template::render("addtodeck", context)
-    }
-
-    #[get("/practice/<table_name>/<english_word>")]
-    pub fn practice(table_name: String, english_word: String) -> Result<Template, BadRequest<String>> {
-        eprintln!("Rerouting to practice.html.tera");
-        let japanese_word = "asdf";
-        let context = json!(
-            {
-                "table": table_name,
-                "japaneseWord": japanese_word,
-                "englishWord": english_word, 
-            }
-        );
-        Ok(Template::render("practice", context))
-        
-    }
-
-}
-
-pub mod pt {
+pub mod n_pt {
     use note_webapp::fun;
     use rocket::{FromForm, post};
     use rocket::response::Redirect;
@@ -205,6 +142,8 @@ pub mod pt {
 
         eprintln!("ID ... is, English Word is {}, Japanese Word is {}, Table name is {}", &eng_word, &jap_word, &table_name);
         Redirect::to(format!("/addtodeck/{}", &table_name))
+
+    
 
     }
         
@@ -371,5 +310,74 @@ pub mod pt {
             Redirect::to(format!("/practice/{}/{}", encoded_table_name, encoded_english_word))
         }
     }
+    #[post("/goto-index")]
+    pub fn goto_index() -> Redirect {
+        Redirect::to("/")
+    }
+}
+
+
+
+pub mod n_gt {
+    use rocket::{response::status::BadRequest, get};
+    use rocket_dyn_templates::{Template, context};
+    use rocket::serde::json::json;
+
+    #[get("/loginpage")]
+    pub fn loginpage() -> Template {
+        Template::render("login", context! { field: "value" })
+    }
+
+    #[get("/login")]
+    pub fn login_page() -> Template {
+        Template::render("login", context! {})
+    }
+
+    #[get("/homescreen")]
+    pub fn homescreen() -> Template {
+        Template::render("homescreen", context! { field: "value" })
+    }
+    #[get("/createdeck")]
+    pub fn createdeck() -> Template {
+        Template::render("createdeck", context! { field: "value" })
+    }
+
+    #[get("/library")]
+    pub fn library() -> Template {
+        let table_names = note_webapp::fun::get_table_names().unwrap_or_else(|_| Vec::new());
+
+        println!("Existing Decks Are {:?}", table_names);
+
+        let context = json!({
+            "tables": table_names,
+        });
+        Template::render("library", context)
+    }
+
+
+    #[get("/addtodeck/<table_name>")]
+    pub fn addtodeck(table_name: String) -> Template {
+        eprintln!("Rerouting to addtodeck.html.tera");
+        let context = json!({
+            "table": table_name,
+        });
+        Template::render("addtodeck", context)
+    }
+
+    #[get("/practice/<table_name>/<english_word>")]
+    pub fn practice(table_name: String, english_word: String) -> Result<Template, BadRequest<String>> {
+        eprintln!("Rerouting to practice.html.tera");
+        let japanese_word = "asdf";
+        let context = json!(
+            {
+                "table": table_name,
+                "japaneseWord": japanese_word,
+                "englishWord": english_word, 
+            }
+        );
+        Ok(Template::render("practice", context))
+        
+    }
+
 }
 

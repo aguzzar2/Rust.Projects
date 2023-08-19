@@ -1,0 +1,8 @@
+target/
+worker.rs
+.vscode/
+404.html
+hello.html
+hello/
+controller/src/lib.rs
+controller/templates/navbar.html.tera

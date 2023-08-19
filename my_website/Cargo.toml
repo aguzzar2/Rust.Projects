@@ -7,12 +7,8 @@ edition = "2021"
 
 [workspace]
 members = [
-    "hello",
     "controller",
     "anthony_webapp",
-    "anthony_webapp/src/launch_aw",
     "note_webapp",
     "note_webapp/src/api",
-    "note_webapp/src/api/src/config",
-    "note_webapp/src/api/src/config/src/launch",
 ]
