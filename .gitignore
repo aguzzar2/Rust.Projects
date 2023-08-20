@@ -6,3 +6,5 @@ hello.html
 hello/
 controller/src/lib.rs
 controller/templates/navbar.html.tera
+Rocket.toml
+controller/Rocket.toml
