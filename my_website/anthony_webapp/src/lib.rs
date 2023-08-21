@@ -49,29 +49,29 @@ pub mod a_gt {
             </div>
 
             <div class='bottom-navbar'>
-                <form action='https://github.com/aguzzar2'>
-                    <button class='nav__links-button' type='submit'>
-                        <img id = 'link__icons' src = '/images/github-logo.png' alt = 'linkedin'>
-                    </button>
-                    
-                </form>
-                <form action='https://www.linkedin.com/in/anthony-guzzardo-648b7116a/'>
-                    <button class='nav__links-button' type='submit'>
-                        <img id = 'link__icons' src = '/images/linkedin-logo.png' alt = 'linkedin'>
-                    </button>
-                </form>
                 <form id='app-form' method='post' action='/webapp'>
                     <button class='nav__links-button' type='submit'>Projects</button>
                 </form>
                 <form id='resume-form' method='post' action='/resume'>
                     <button class='nav__links-button' type='submit'>Resume</button>
                 </form>
-                <form id='about-form' method='post' action='/about'>
-                    <button class='nav__links-button' type='submit'>About</button>
-                </form>
                 
             </div>
         </nav>")
+        // <form id='about-form' method='post' action='/about'>
+        //             <button class='nav__links-button' type='submit'>About</button>
+        //         </form>
+        // <form action='https://github.com/aguzzar2'>
+        //             <button class='homepage__button' type='submit'>
+        //                 <img id = 'link__icons' src = '/images/github-logo.png' alt = 'linkedin'>
+        //             </button>
+                    
+        //         </form>
+        //         <form action='https://www.linkedin.com/in/anthony-guzzardo-648b7116a/'>
+        //             <button class='homepage__button' type='submit'>
+        //                 <img id = 'link__icons' src = '/images/linkedin-logo.png' alt = 'linkedin'>
+        //             </button>
+        //         </form>
 
     }
 

@@ -49,4 +49,6 @@ fn my_website_rocket() -> _ {
         .mount("/static", FileServer::from("static"))
         .mount("/images", FileServer::from("images"))
         .mount("/scripts", FileServer::from("scripts"))
+        .mount("/pdf", FileServer::from("pdf"))
+        
 }    

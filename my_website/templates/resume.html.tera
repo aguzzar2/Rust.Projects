@@ -11,6 +11,105 @@
     {{ navbar_html | safe }}
 
     <div class = "big__container">
+        <div class = "coding__skills">
+            <div class = "coding__skills-info">
+                <p>Bachelors in <strong>Computer Science</strong> from DePaul University. 
+                Studied Software Development aiming to become a Full Stack developer. 
+                Have a passion for other spoken languages, learning Japanese and Spanish. 
+                While I search for a developer role I am helping a resident at an 
+                assisting living facility located in Chicago and developing projects 
+                independently that will be accessible from my website “<span class = "cs-red"><strong>a-guzzardo.info</strong></span>” 
+                | GITHUB REPO <span class = "cs-red"><strong>Rust.Projects</strong></span></p>
+            </div>
+            <div class = "coding__skills-photo">
+                <img id = "pichart__photo" src = "/images/pie-chart.png" alt = "note-app">
+            </div>
+
+            <script>
+                // Wait for the page to fully load
+                document.addEventListener("DOMContentLoaded", function() {
+                    var img = document.getElementById("pichart__photo");
+                    img.style.opacity = "1"; // Change opacity to 1, making the image visible
+                });
+            </script>
+        </div>
+        <div class = "work__bottom__border-container">
+            
+            <div class ="work__container">
+                <div class ="title__date">
+                    <h3 class ="title">WORK HISTORY</h3>
+    
+                    <div class = "info-date">
+                        
+                        <p>JUN 2021 - JAN 2022</p>
+                        
+                        <p>DEC 2020 - JULY 2021</p>
+    
+                        <p>MAY 2019 - AUG 2019</p>
+                    </div>
+                </div>
+                
+                <div class = "info-jobwork">
+                    <div class ="ij__border-top"></div>
+    
+                    <p>
+                        <strong>Frances Deli & Brunchery - Chicago, IL Food Runner</strong>
+                        Reference Mike Williamson (773) - 668 - 6561        
+                    </p>
+                    
+                    <p>
+                        <strong>Jewel Osco - Chicago, IL Produce Clerk</strong>
+                        Reference Store # (773) - 348 - 6426
+                    </p>
+                    
+                    <p>
+                        <strong>Deli & More - Chicago, IL Cashier</strong>
+                        Reference Bob Ciesla (773) - 386 - 7006
+                    </p>
+                </div>
+            </div>
+            <div class ="work__education__border-bottom"></div>
+            
+        </div>
+        <div class = education__bottom__border-container>
+            <div class = "education__container">
+                <div class = "title__date">
+                    <h3 class ="title">EDUCATION</h3>
+    
+                    <div class = "info-date">
+                        <p>AUG 2017 - OCT 2020</p>
+        
+                        <p>AUG 2021 - JUN 2023</p>
+                    </div>
+        
+                </div>
+                <div class = "info-jobwork">
+                    <div class ="ij__border-top"></div>
+                    <p>
+                        <strong>Indiana University Bloomington, IN</strong>
+                        College of Cinema Arts & Design, Narrative Filmmaking
+                    </p>
+                    <p>
+                        <strong>DePaul University Chicago, IL</strong>
+                        Bachelor of Science in Computer Science, Software Development
+                    </p>
+                    
+                </div>
+            </div>
+        
+            <div class ="work__education__border-bottom"></div>
+            
+        </div>
+        <a class = "homepage__button" href = "/pdf/a-guzzardo-resume.pdf" target = "_blank">View PDF</a>
+
+    </div>
+
+    {# <div class = "big_container">
+        <a class = "homepage__button" href = "/pdf/a-guzzardo-resume.pdf" target = "_blank">View PDF</a>
+    </div> #}
+
+
+    {# <div class = "big__container">
         <div class = "resume">
             <table class = "resume__education">
                 <tr>
@@ -59,6 +158,6 @@
     
             </table>
         </div>
-    </div>
+    </div> #}
 </body>
 </html>
