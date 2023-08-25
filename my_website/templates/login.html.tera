@@ -16,18 +16,18 @@
             <div class="login__inputs">
                 <div class = "text__box">
                     <label for="" class="login__label">Username</label>
-                    <input type="text" name="username" placeholder="Username" required class="login__input">
+                    <input type="text" name="username" placeholder="TO BYPASS" required class="login__input">
                 </div>
 
                 <div class = "text__box">
                     <label for="" class="login__label">Password</label>
                     <div class="login__box">
-                        <input type="password" name="password" placeholder="Password" required class="login__input" id="input-pass">
+                        <input type="password" name="password" placeholder="PRESS LOGIN" required class="login__input" id="input-pass">
                     </div>
                 </div>
             </div>
             <button class ="small__button" type="button" onclick="submitLoginForm()">Login</button>
-            <button class ="small__button" type="button" onclick="submitSignUpForm()">Signup</button>
+            {# <button class ="small__button" type="button" onclick="submitSignUpForm()">Signup</button> #}
             
 
         </form>

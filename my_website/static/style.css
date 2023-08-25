@@ -20,6 +20,8 @@ html{
 
 
 .top-navbar{
+    width: 30%;
+    height: auto;
     place-items: center;
     width: 100%;
     justify-content: center;

@@ -51,6 +51,19 @@ body {
   background-color: azure;
   font-weight: bold;
 }
+.small__button-temp{
+  font-size: 20px;
+  padding-right: 4px;
+  padding-left: 4px;
+  width: 80%;
+  height: auto;
+  margin: 0 5px;
+  border-radius: 25px;
+  border-color:aliceblue;
+  color: #8EBB8E;
+  background-color: azure;
+  font-weight: bold;
+}
 .text__box{
   padding-top: 10px;
   padding-bottom: 10px;
