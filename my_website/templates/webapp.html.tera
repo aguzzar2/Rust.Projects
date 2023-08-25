@@ -14,6 +14,8 @@
         <div class = "home__div">
             <img id = "noteapp__photo" src = "/images/note-app.png" alt = "note-app">
         </div>
+        <p>Note Taking Webapp</p>
+        <p>Not yet able to add or create decks in library.</p>
         <form id = "note_app-form" method = "post" action = "/notewebapp_login">
             <button class = "nav__links-button" type = "submit" href = "">Run</button>
         </form>
