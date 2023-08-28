@@ -40,7 +40,18 @@ pub mod a_gt {
     fn get_navbar_html() -> String {
         String::from("
         <nav id = 'nav-container' class = 'navbar-container'>
+
             <div class = 'top-navbar'>
+
+                <form id = 'title-form' method = 'post' action = '/index'>
+                    <button class ='homepage__button' type = 'submit'>
+                        Top Button
+                    </button>
+                </form>
+            </div>
+
+            <div class = 'top-navbar'>
+
                 <form id = 'title-form' method = 'post' action = '/index'>
                     <button class ='homepage__button' type = 'submit'>
                         Anthony Guzzardo
