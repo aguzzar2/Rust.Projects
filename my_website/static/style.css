@@ -79,16 +79,16 @@ html{
     /* Other button styles */
     margin: 10px;
     padding: 10px;
-    font-size: 100%;
-    background-color: black;
-    color: white;
-    border: none;
-    /* cursor: pointer; */
-    /* position: relative; */
-    /* overflow: hidden;  */
+    font-size: 150%;
+    background-color: white;
+    color: black;
+    border: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; 
 }
 
-/* .homepage__button::before {
+.homepage__button::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -113,7 +113,19 @@ html{
     border-bottom: 3px solid black;
     opacity: 0;
     transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
-} */
+}
+
+.homepage__button:hover::after {
+
+    opacity: 1;
+    width: 100%;
+}
+.homepage__button:hover::before {
+
+    opacity: 1;
+    height: 100%;
+}
+
 
 /* .homepage__button:not(.active):hover::after {
     opacity: 1;
