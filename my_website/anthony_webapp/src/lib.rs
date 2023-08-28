@@ -41,7 +41,6 @@ pub mod a_gt {
         String::from("
         <nav id = 'nav-container' class = 'navbar-container'>
 
-            <h1>HELLO</h1>
 
             <div class = 'top-navbar'>
 

@@ -53,7 +53,7 @@ html{
 }
 
 /* HOMEPAGE ---- BUTTTTON */
-.homepage__button.active {
+/* .homepage__button.active {
     margin: 10px;
     font-size: 200%;
     padding: 10px 20px;
@@ -61,10 +61,10 @@ html{
     color: white;
     cursor: pointer;
     position: relative;
-    overflow: hidden; /* Hide overflowing content (outline) */
-}
+    overflow: hidden; 
+} */
 
-.homepage__button.active::before {
+/* .homepage__button.active::before {
     opacity: 0;
     height: 0;
 }
@@ -72,7 +72,7 @@ html{
 .homepage__button.active::after {
     opacity: 0;
     width: 0;
-}
+} */
 
 
 .homepage__button {
@@ -114,14 +114,14 @@ html{
     transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.homepage__button:not(.active):hover::after {
+/* .homepage__button:not(.active):hover::after {
     opacity: 1;
     width: 100%;
 }
 .homepage__button:not(.active):hover::before {
     opacity: 1;
     height: 100%;
-}
+} */
 
 
 
