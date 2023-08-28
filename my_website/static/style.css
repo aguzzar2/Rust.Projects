@@ -78,13 +78,14 @@ html{
 .homepage__button {
     /* Other button styles */
     margin: 10px;
-    font-size: 200%;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: transparent;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden; /* Hide overflowing content (outline) */
+    padding: 10px;
+    font-size: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    /* cursor: pointer; */
+    /* position: relative; */
+    /* overflow: hidden;  */
 }
 
 /* .homepage__button::before {
