@@ -41,14 +41,7 @@ pub mod a_gt {
         String::from("
         <nav id = 'nav-container' class = 'navbar-container'>
 
-            <div class = 'top-navbar'>
-
-                <form id = 'title-form' method = 'post' action = '/index'>
-                    <button class ='homepage__button' type = 'submit'>
-                        Top Button
-                    </button>
-                </form>
-            </div>
+            <h1>HELLO</h1>
 
             <div class = 'top-navbar'>
 
