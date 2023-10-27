@@ -16,15 +16,25 @@
         </div>
     
         <div class = "aboutme__div">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anthony earned a Bachelors of Science from DePaul University - studying
-            Computer Science & Software Development. He has project experience in web application development on multiple frameworks 
-            including Flask and Rocket. He's committed to an independent development of skills necessary to create object-oriented sound programs 
-            with user friendly experiences. Anthony is searching for rolls where he can learn and grow under mentorship as a beginning developer. 
-            Some of his projects include Health Care DB Management called "Jeffsite" which he began in September 2022. The project focuses on simplifying balance sheet management for healthcare providers, 
-            featuring a user-friendly interface and an integrated feedback system to monitor changes efficiently. https://github.com/aguzzar2/Python.Projects. He's passionate about learning spoken languages, and
-            in November of 2022 began working on a Flash Cards webapp where users could create and evaluate collections of digital flashcards across diverse topics, benefiting from a streamlined management system and 
-            optimized storage, made possible by Rust’s memory efficiency. https://github.com/aguzzar2/Python.Projects. He resides in Chicago and works part time assisting a senior resident at Artis Assisted Living Facility.
-            He supports the resident with mobility within her room and accompanies her on daily neighborhood walks fostering a mutual respect and a pleasant rapport.
+            <p style="margin-bottom: 16px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anthony holds a Bachelor of Science degree in Computer Science & Software Development from DePaul University. His expertise encompasses web application development, 
+                with hands-on experience in various frameworks, including Flask and Rocket.Dedicated to continually enhancing his skills, Anthony is committed to developing object-oriented programs that offer 
+                user-friendly experiences.
+            </p>
+            <p style="margin-bottom: 16px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;He is currently on the lookout for entry-level developer positions where he can flourish and gain knowledge under expert guidance and mentorship. Among his notable projects
+                is "Jeffsite," a Healthcare Database Management system initiated in September 2023. This project aims to streamline balance sheet management for healthcare providers, boasting a user-friendly
+                interface coupled with an integrated feedback system for efficient change monitoring. 
+            </p>
+            <p style="margin-bottom: 16px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anthony is also passionate about language learning. In December 2022, he embarked on creating a Flash Card web
+                app that allows users to generate and assess digital flashcard collections spanning a variety of topics. The app leverages Rust's memory efficiency to provide a well-organized management system and optimized data storage.
+            </p>
+            <p style="margin-bottom: 16px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Residing in Chicago, Anthony contributes part-time as an assistant to a senior resident at Artis Assisted Living Facility. In this role, he offers support with in-room mobility and engages in 
+                daily neighborhood walks, fostering a relationship built on respect and camaraderie.
+            </p>
+        </div>
         <div class = "resume-link">
             <form id='resume-form' method='post' action='/resume'>
                 <button class='resume__links-button' type='submit'>Resume</button>
