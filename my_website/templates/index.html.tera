@@ -18,12 +18,7 @@
         <div class = "aboutme__div">
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After obtaining my Bachelors of Science from DePaul University - studying
             Computer Science & Software Development - I split the summer working independently on full-stack
-            development projects and assisting at a nursing facility.
-            
-            <--- FIT IN SOMETHING HERE ABOUT OBJECT ORIENTED PROGRAMMING --->
-            A lot of programming is research. It feels like a 20000 foot runway sometimes.  
-            
-            This is an informative website of my experience, educational background, and development work. The API is written in Rust and is currently running on Google Cloud.</p>
+            development projects and assisting at a nursing facility. This is an informative website of my experience, educational background, and development work.</p>
             
         </div>
         <div class = "resume-link">
